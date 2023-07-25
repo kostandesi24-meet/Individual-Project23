@@ -58,7 +58,7 @@ def signup():
 @app.route('/signout' , methods=['GET','POST'])
 def signout():
     login_session['user']=""
-    return redirect(url_for('login'))
+    return redirect(url_for('signin'))
 
 
 @app.route('/homep' , methods=['GET','POST'])
